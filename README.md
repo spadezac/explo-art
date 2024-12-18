@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Explo-Art
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Explo-Art is a modern web application built with React and Vite to showcase and explore art pieces. It integrates a responsive, data-driven table with features such as pagination, artwork selection, and more. The app uses `Primereact` for UI components and provides an easy-to-use interface for browsing artwork data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Display artworks in a data table with pagination.
+- Multiple row selection and custom row count.
+- Support for viewing artwork details and filtering based on categories.
+- Persistent selection storage using `localStorage`.
+- Responsive and accessible design.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React, Vite
+- **UI Library**: Primereact, PrimeIcons, PrimeFlex
+- **State Management**: React `useState` and `useEffect`
+- **API Integration**: Axios (for fetching artwork data)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+To run the project locally, follow these steps:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/spadezac/explo-art.git
+cd explo-art
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+Visit http://localhost:3000 to view the application.
+
+## Scripts
+
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project for production.
+- `npm run preview`: Preview the production build.
+- `npm run lint`: Run ESLint to check for code quality issues.
+
+## Contributing
+
+If you'd like to contribute to this project, feel free to fork the repository, create a branch, and submit a pull request. We welcome improvements, bug fixes, and feature suggestions!
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
