@@ -1,0 +1,117 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for the entire app */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  padding: 10px 10px 20px 10px;
+}
+
+/* Styling for the DataTable component */
+.card {
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* PrimeReact DataTable Custom Styles */
+.p-datatable {
+  font-size: 14px;
+  width: 100%;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 10px;
+  text-align: left;
+}
+
+.p-datatable .p-datatable-tbody > tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background-color: #f0f0f0;
+}
+
+.p-datatable-header {
+  background-color: #fafafa;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.p-paginator {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.p-paginator .p-paginator-pages {
+  font-size: 14px;
+}
+
+.p-paginator .p-paginator-current {
+  font-weight: bold;
+}
+
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+}
+
+.p-paginator .p-paginator-prev:focus,
+.p-paginator .p-paginator-next:focus {
+  outline: none;
+}
+
+/* PrimeReact Table Selection Checkbox */
+.p-checkbox .p-checkbox-box {
+  border: 1px solid #007bff;
+}
+
+.p-checkbox-checked .p-checkbox-box {
+  background-color: #007bff;
+}
+
+.p-checkbox-checked .p-checkbox-icon {
+  color: white;
+}
+
+/* Custom Pagination Text */
+.paginator-info {
+  font-size: 14px;
+  color: #007bff;
+}
+
